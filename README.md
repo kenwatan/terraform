@@ -1,6 +1,6 @@
 # terraform_OCIRM_sample_ComputeCreate
 for terraform
-Sample: Creating a Compute Instance Using Resource Manager
+Sample: Creating a Compute Instance Using Resource Manager<BR>
 https://docs.cloud.oracle.com/iaas/Content/ResourceManager/Concepts/samplecomputeinstance.htm
 ここで提示されているサンプルのTerraformコンフィグレーションファイル(.tf)
 
