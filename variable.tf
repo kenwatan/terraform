@@ -1,9 +1,14 @@
-variable "compartment_ocid" {
-	default = "ocid1.compartment.oc1..aaaaaaaawauppvhxfrnt63qzn65nwaacwhzcfrpam4ujyfctvmuf2wzp5aeq"
-}
+variable "compartment_ocid" {}
+
+variable "ssh_public_key" {}
 
 variable "region" {
-	default = "us-ashburn-1"
+    default ="us-ashburn-1"
+}
+
+# Specifies the Availability Domain
+variable "localAD" {
+    default = "TGjA:US-ASHBURN-AD-3"
 }
 
 variable "InstanceImageOCID" {
@@ -18,9 +23,6 @@ variable "InstanceImageOCID" {
     }
 }
 
-variable "ssh_public_key" {
-	default = "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA+/WnQBuzxsiOWxzoPrNeAESsROSRhpVuwgefqC0ejgRHYJXZqlx/Y//SUOyNfM8SooOKNaIQ+TVHc0Ct5p+o7+/3SDnBTqYy/jNjsNvkbPP3awqPClOJ7gL82O/o3Ced1ZyOKKEy11JoesUTKvjk6lY8+aGtbsn4hgAIkGdDIFom2fDyW4A9a3ysijXdk5PGd6UDbe/1UvChQkfmdye9kL6mfVlTqdgv+oTnjHA2ZFhHJOAtobmV2vaRWjWEf7eWRNEPsdVG7abzoExRe+JM1nhTiwCqyGu57HIBirHLzfNX9ij5T6ZvaVE9o+AKygKNEjUsmA6Hi6WudnDSvw1JHw== mmarukaw@MMARUKAW-LAP2"
-}
 
 # Defines the number of instances to deploy
 variable "NumInstances" {
@@ -31,7 +33,3 @@ variable "InstanceShape" {
     default = "VM.Standard2.1"
 }
 
-# Specifies the Availability Domain
-variable "localAD" {
-    default = "TGjA:US-ASHBURN-AD-3"
-}
